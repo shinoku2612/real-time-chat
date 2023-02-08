@@ -1,0 +1,49 @@
+@import "normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap");
+:root {
+  --primary: #fff;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  opacity: 0.4;
+  border-radius: 5px;
+}
+html {
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smoothing;
+  font-size: 62.5%;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+body {
+  position: relative;
+  font-family: "IBM Plex Sans", sans-serif, Ubuntu;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#process-bar {
+  position: fixed;
+  height: 3px;
+  z-index: 100000;
+  top: 0;
+  width: 100%;
+}
+.ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}

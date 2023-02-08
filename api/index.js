@@ -31,7 +31,12 @@ mongoose
 app.use(
     cors({
         credentials: true,
-        origin: ['http://localhost:3000', 'http://localhost:8900'],
+        origin: [
+            'http://localhost:3000',
+            'http://localhost:8900',
+            'https://real-time-chat-peach.vercel.app',
+            'https://real-time-chat-socket.onrender.com'
+        ],
     }),
 );
 app.use(cookieParser());

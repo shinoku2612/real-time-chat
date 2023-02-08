@@ -680,36 +680,36 @@ video {
 }
 
 .chat-item.own {
-  justify-content: flex-start;
-}
-
-.chat-item.own span {
-  border-radius: 0 10px 10px 10px;
-  border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(191 219 254 / var(--tw-border-opacity));
-}
-
-.chat-item.not-own {
   flex-direction: row-reverse;
 }
 
-.chat-item.not-own div {
+.chat-item.own div {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
 }
 
-.chat-item.not-own span {
-  margin-left: auto;
+.chat-item.own span {
   border-radius: 10px 0 10px 10px;
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
-.chat-item.not-own p {
-  display: block;
-  width: 100%;
-  text-align: end;
+.chat-item.not-own {
+  justify-content: flex-start;
+}
+
+.chat-item.not-own div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.chat-item.not-own span {
+  border-radius: 0 10px 10px 10px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(191 219 254 / var(--tw-border-opacity));
 }
 
 .item-hovered {
